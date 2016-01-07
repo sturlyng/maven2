@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>prueba-app</groupId>
-  <artifactId>prueba-app1</artifactId>
-  <version>1-SNAPSHOT</version>
+  <artifactId>47345356V</artifactId>
+  <version>2</version>
   <packaging>jar</packaging>
 
   <name>app</name>
@@ -21,6 +21,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<profiles>
+  <profile>
+     <id> prof-1 </id>
+     <activation>
+	 <os>
+		<family>windows</family>
+	 </os>
+     </activation>
     <build>
         <plugins>
             <plugin>
@@ -30,4 +38,6 @@
             </plugin>
         </plugins>
     </build>
+  </profile>
+</profiles>
 </project>
